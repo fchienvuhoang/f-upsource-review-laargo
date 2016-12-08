@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sys_laargo/!svn/ver/155/trunk/src/servers
+END
+helmetConfig.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sys_laargo/!svn/ver/167/trunk/src/servers/helmetConfig.js
+END
+productUpload.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sys_laargo/!svn/ver/172/trunk/src/servers/productUpload.js
+END
+uploadConfig.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sys_laargo/!svn/ver/166/trunk/src/servers/uploadConfig.js
+END
+productCopy.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sys_laargo/!svn/ver/187/trunk/src/servers/productCopy.js
+END
+imageEditorUpload.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sys_laargo/!svn/ver/166/trunk/src/servers/imageEditorUpload.js
+END
+apiConfig.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sys_laargo/!svn/ver/172/trunk/src/servers/apiConfig.js
+END
+authentication.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sys_laargo/!svn/ver/183/trunk/src/servers/authentication.js
+END
+storeSettingUpload.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sys_laargo/!svn/ver/170/trunk/src/servers/storeSettingUpload.js
+END

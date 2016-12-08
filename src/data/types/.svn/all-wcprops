@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/types
+END
+ContentType.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/types/ContentType.js
+END
+NewsItemType.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/types/NewsItemType.js
+END
+UserType.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/types/UserType.js
+END

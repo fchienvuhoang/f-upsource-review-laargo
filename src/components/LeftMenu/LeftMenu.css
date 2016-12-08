@@ -1,0 +1,79 @@
+@import '../variables.css';
+
+.root {
+  width: var(--left-menu-width);
+  float: left;
+  min-height: 300px;
+}
+
+.root .header {
+  display: block;
+}
+
+.root .header span.title {
+  color: var(--panel-header);
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 0;
+  padding-top: 9px;
+  display: block;
+  padding-bottom: 9px;
+}
+
+.root .body {
+  background: #fff;
+}
+
+.root .body ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.root .body ul li {
+
+}
+
+.root .body ul li a {
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 13px;
+  color: var(--panel-item);
+  text-decoration: none;
+}
+
+.root .body ul li a:hover {
+  text-decoration: underline;
+}
+
+.root .body ul li:last-child a {
+  border-bottom: 0;
+}
+
+.root .body ul li[data-active="true"] a {
+  color: #2468af;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #d4e5f8;
+}
+
+.toStore {
+  & a {
+    color: var(--panel-item);
+    padding-left: 3px;
+    padding-top: 15px;
+    border-top: 1px solid var(--default-border);
+    padding-bottom: 10px;
+    display: block;
+    margin-left: 5px;
+    margin-right: 10px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

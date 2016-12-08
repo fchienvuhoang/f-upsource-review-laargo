@@ -1,0 +1,35 @@
+10
+
+dir
+0
+http://admin@112.213.88.37:81/svn/sys_laargo/trunk/.idea/dictionaries
+http://admin@112.213.88.37:81/svn/sys_laargo
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+71fc21b4-0665-4cd5-b0cb-5a42b08f2f8c
+
+vuchien.xml
+file
+
+
+
+add
+

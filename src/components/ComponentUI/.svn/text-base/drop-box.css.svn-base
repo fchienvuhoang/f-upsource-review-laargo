@@ -1,0 +1,115 @@
+:root {
+  --a-active: var(--blue-link);
+  --a-border: #2f3745;
+}
+
+.dropDown {
+  display: inline-block;
+}
+
+.dropDown .dropBox {
+  position: absolute;
+  z-index: 10;
+  margin-top: 0;
+  right: 0;
+}
+
+.dropDown .dropBox ul.dropItem {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  display: block;
+  font-size: 13px;
+  right: 0;
+  list-style: outside none none;
+  margin: -1px 0 0;
+  min-width: 90px;
+  text-align: left;
+  top: 100%;
+  position: static;
+  & li {
+    display: block;
+  }
+}
+
+.dropDown .dropBox ul.dropItem[data-caret-left="true"]:before {
+  left: 12px;
+  right: auto !important;
+}
+
+.dropDown .dropBox ul.dropItem[data-caret-left="true"]:after {
+  left: 13px;
+  right: auto !important;
+}
+
+.dropDown .dropBox ul.dropItem:before {
+  border-bottom: 8px solid rgba(0, 0, 0, 0.15);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+  display: inline-block;
+  right: 12px;
+  position: absolute;
+  top: -8px;
+}
+
+.dropDown .dropBox ul.dropItem:after {
+  border-bottom: 7px solid #ffffff;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  content: "";
+  display: inline-block;
+  right: 13px;
+  position: absolute;
+  top: -7px;
+}
+
+.dropDown .dropBox ul.dropItem li a {
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  margin-top: 1px;
+  padding: 3px 12px;
+  color: var(--black);
+}
+
+.dropDown .selectBox {
+  margin-top: 0;
+}
+
+.dropDown .selectBox ul.dropItem {
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.dropDown .selectBox ul.dropItem li:before, :after {
+  border: 0;
+}
+
+.dropDown .selectBox ul.dropItem li a {
+  margin-bottom: 2px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.dropDown .dropBox ul.dropItem li a:hover, .dropDown .dropBox ul.dropItem li a:active {
+  background: var(--a-active);
+  color: #fff;
+}
+
+.dropDown .selectBox ul.dropItem li a:hover, .dropDown .selectBox ul.dropItem li a:active {
+  background: var(--a-active);
+  color: #fff;
+  font-weight: bold;
+  border-color: #fff;
+}

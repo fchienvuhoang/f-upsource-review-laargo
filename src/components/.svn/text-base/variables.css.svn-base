@@ -1,0 +1,126 @@
+
+:root {
+  --header-bg: #ffffff;
+  --footer-bg: #ffffff;
+  --main-background-site: #ffffff;
+  --default-border: #dcdee3;
+  --panel-border: #f1f1f1;
+  --blue-border: #72b6ec;
+  --panel-header: var(--gray-darker);
+  --panel-header-bg: #F6F7F8;
+  --panel-item: #141823;
+  --panel-bg-hover: #F6F7F8;
+  --min-height-body: 0;
+  --left-menu-width: 172px;
+  --right-width: calc((var(--max-content-width) - var(--left-menu-width)) - 10px);
+  --right-widthout-left-menu: var(--max-content-width);
+  --icon-bg: url("https://la-static.laargo.vn/bg-icons.png");
+  --laargo-logo: url("https://la-static.laargo.vn/laargo_logo.png");
+  --loading-gif: url("https://la-static.laargo.vn/loading.gif");
+
+  /**
+  * Z-index all
+  */
+  --z-index-panel-loading: 11;
+  --z-index-mask-body: 10;
+  --z-index-panel-popup: calc(var(--z-index-mask-body) + 1);
+  --z-index-mask-body-level-2: calc(var(--z-index-mask-body) + 2);
+  --z-index-mask-body-level-3: calc(var(--z-index-mask-body-level-2) + 2);
+
+  --z-index-panel-popup-level-2: calc(var(--z-index-mask-body-level-2) + 1);
+  --z-index-panel-popup-level-3: calc(var(--z-index-mask-body-level-3) + 1);
+
+  /*
+   * Typography
+   * ======================================================================== */
+
+  --font-family-base: -apple-system, BlinkMacSystemFont,
+  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+  "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+
+  --black: #000;
+  --gray-light: #767676;
+  --gray: #555555;
+  --gray-dark: #404040;
+  --gray-darker: #222222;
+  --gray-lighter: #eeeeee;
+  --gray-light1: #979797;
+  --blue-link: #0275d8;
+  --green: #008a00;
+  --dark-red: #d44950;
+
+  /*
+   * Layout
+   * ======================================================================== */
+
+  --max-content-width: 980px;
+
+  /*
+   * Media queries breakpoints
+   * ======================================================================== */
+
+  --screen-xs-min: 480px; /* Extra small screen / phone */
+  --screen-sm-min: 768px; /* Small screen / tablet */
+  --screen-md-min: 992px; /* Medium screen / desktop */
+  --screen-lg-min: 1200px; /* Large screen / wide desktop */
+}
+
+span._variable_caretDown {
+  background: transparent var(--icon-bg) no-repeat scroll -51px -1px / auto 240px;
+  display: block;
+  width: 12px;
+  height: 7px;
+  float: right;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.centerLoading {
+  display: block;
+  clear: both;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.centerLoading[data-loading="true"] {
+  display: block;
+}
+
+.centerLoading[data-loading="false"] {
+  display: none;
+}
+
+.centerLoadingBg {
+  background: transparent var(--loading-gif) no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: 20px auto;
+  margin: 0 auto;
+}
+
+.centerLoadingBg[data-show="false"] {
+  display: none;
+}
+
+._wrap[data-show="true"] {
+  display: block;
+}
+
+._wrap[data-show="false"] {
+  display: none;
+}
+
+.centerLoading img {
+  display: block;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.rightContentWrapper {
+  min-height: 500px;
+}
+
+.clear {
+  clear: both;
+}

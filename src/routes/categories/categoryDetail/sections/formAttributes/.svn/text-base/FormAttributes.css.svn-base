@@ -1,0 +1,74 @@
+@import '../../../../../components/variables.css';
+@import '../../../../../components/ComponentUI/panel.css';
+@import '../../../../../components/ComponentUI/input.css';
+@import '../../../../../components/ComponentUI/button.css';
+
+.formCreateAttributes {
+  width: 500px;
+}
+
+#wrapperListAttributes {
+  border-top: 1px solid #f1f1f1;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#wrapperListAttributes ul {
+  list-style-type: none;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+#wrapperListAttributes ul li {
+
+}
+
+#wrapperListAttributes ul li a {
+  display: inline-block;
+  color: var(--gray);
+  margin-top: 4px;
+  margin-bottom: 2px;
+  padding: 2px 6px 3px;
+  border-radius: 2px;
+  font-weight: normal;
+  margin-left: 15px;
+}
+
+#wrapperListAttributes ul li span.closeItem {
+  background: transparent var(--icon-bg) no-repeat scroll -47px 3px / auto 350px;
+  display: block;
+  float: right;
+  height: 17px;
+  position: absolute;
+  margin-left: -10px;
+  width: 14px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+#wrapperListAttributes ul li span.closeItem:hover {
+  background-position: -61px 3px;
+}
+
+#wrapperListAttributes ul li a:hover {
+  background: #f1f1f1;
+}
+
+.btnAttrFormInline {
+  margin-top: 37px;
+  display: block;
+  margin-left: 3px;
+  float: left;
+  line-height: 28px;
+}
+
+.formAttributeInline {
+  padding-left: 15px;
+  width: 200px;
+  margin-top: 10px;
+  float: left;
+  & label.title {
+    font-weight: bold;
+    color: var(--gray);
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../../../../components/variables.css';
+@import '../../../../../../components/ComponentUI/panel.css';
+@import '../../../../../../components/ComponentUI/button.css';
+
+.root {
+  & .wrapperMain {
+    top: -15px;
+    width: 98%;
+    max-width: 1500px;
+  }
+}

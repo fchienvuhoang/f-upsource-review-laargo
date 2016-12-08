@@ -1,0 +1,24 @@
+html
+  head
+    style
+      include login.css
+    title='Laargo - Đăng nhập'
+  body
+    div.root
+      div.wrapperLogin
+        div.wrapperHeader
+          label.title Đăng nhập
+        form(method="post" action="/dang-nhap")
+          div.wrapperBody
+            div.wrapperInside
+              div.formGroup
+                input(placeholder="Tài khoản" name="a" class="account" type="text")
+              div.formGroup
+                input(type="password" placeholder="Mật khẩu" name="p" class="password")
+              div.formGroupError
+                label= errorMessage
+          div.wrapperFooter
+            div.insideFooter
+              div.wrapBtn
+                button() Truy cập
+              div.clear

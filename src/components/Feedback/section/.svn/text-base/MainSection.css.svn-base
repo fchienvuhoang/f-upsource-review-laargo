@@ -1,0 +1,48 @@
+@import '../../../components/variables.css';
+@import '../../../components/ComponentUI/panel.css';
+@import '../../../components/ComponentUI/input.css';
+@import '../../../components/ComponentUI/button.css';
+
+.rootFeedback {
+  width: 500px;
+  & .wrapperLineMessage {
+    & .wrapperIcon {
+      float: left;
+      margin-left: 20px;
+      & .icon {
+        background: transparent var(--icon-bg) no-repeat scroll 2px -144px / auto 390px;
+        display: block;
+        width: 60px;
+        height: 60px;
+      }
+    }
+    & .wrapperMessage {
+      float: left;
+      width: 380px;
+      & .insideMessage {
+        margin-left: 10px;
+        & label {
+          font-size: 14px;
+          color: var(--gray);
+        }
+      }
+    }
+  }
+  & .wrapperLineForm {
+    margin-left: 20px;
+    margin-top: 20px;
+    border-top: 1px solid var(--default-border);
+    padding-top: 15px;
+    & textarea {
+      width: 100%;
+    }
+    & .successMessage {
+      color: var(--green);
+      font-size: 12px;
+      margin-top: 5px;
+      &[data-show="false"] {
+        display: none;
+      }
+    }
+  }
+}

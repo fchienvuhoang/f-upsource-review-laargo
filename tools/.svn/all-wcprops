@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/sys_laargo/!svn/ver/115/trunk/tools
+END
+run.js
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sys_laargo/!svn/ver/115/trunk/tools/run.js
+END
+.eslintrc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sys_laargo/!svn/ver/115/trunk/tools/.eslintrc
+END
+bundle.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sys_laargo/!svn/ver/115/trunk/tools/bundle.js
+END
+copy.js
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sys_laargo/!svn/ver/115/trunk/tools/copy.js
+END
+runServer.js
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sys_laargo/!svn/ver/115/trunk/tools/runServer.js
+END
+deploy.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sys_laargo/!svn/ver/115/trunk/tools/deploy.js
+END
+start.js
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sys_laargo/!svn/ver/115/trunk/tools/start.js
+END
+build.js
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sys_laargo/!svn/ver/115/trunk/tools/build.js
+END
+render.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sys_laargo/!svn/ver/115/trunk/tools/render.js
+END
+webpack.config.js
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sys_laargo/!svn/ver/115/trunk/tools/webpack.config.js
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sys_laargo/!svn/ver/115/trunk/tools/README.md
+END
+clean.js
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sys_laargo/!svn/ver/115/trunk/tools/clean.js
+END

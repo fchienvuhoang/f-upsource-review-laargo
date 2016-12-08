@@ -1,0 +1,58 @@
+@import '../../components/variables.css';
+
+.rootEditorProduction {
+  & .wrapperRows {
+    & .row {
+      & .wrapperColumns {
+        display: table;
+        &[data-column="3"] {
+          & .column {
+            width: calc(100% / 3);
+          }
+        }
+        &[data-column="2"] {
+          & .column {
+            width: calc(100% / 2);
+          }
+        }
+        &[data-column="1"] {
+          & .column {
+            width: calc(100%);
+          }
+        }
+        & .column {
+          display: table-cell;
+          padding-right: 10px;
+          margin-bottom: 10px;
+          height: 100%;
+          vertical-align: top;
+          text-align: left;
+          & .wrapperItems {
+            & .wrapItem {
+              & .item {
+                display: block;
+                max-width: 100%;
+                margin-bottom: 10px;
+                &[data-type="TEXT"] {
+                  & h3 {
+                    margin-top: 3px;
+                    margin-bottom: 3px;
+                    font-weight: normal;
+                    font-size: 18px;
+                  }
+                }
+                &[data-type="IMAGE"] {
+                  & img {
+                    max-width: 100%;
+                    display: block;
+                    margin: 0 auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

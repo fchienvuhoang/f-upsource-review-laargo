@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="http://112.213.88.37:81/svn/sys_laargo/branches" />
+                  <option value="http://112.213.88.37:81/svn/sys_laargo/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="http://112.213.88.37:81/svn/sys_laargo/trunk" />
+              <option name="userinfoInUrl" value="true" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

@@ -1,0 +1,7 @@
+@import '../../../../components/ComponentUI/panel.css';
+@import '../../../../components/ComponentUI/input.css';
+@import '../../../../components/ComponentUI/button.css';
+
+.FormCategoryPanel {
+    width: 500px;
+}

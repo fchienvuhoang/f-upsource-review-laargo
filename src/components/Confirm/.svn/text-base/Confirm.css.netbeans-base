@@ -1,0 +1,42 @@
+@import '../../components/variables.css';
+@import '../../components/ComponentUI/panel.css';
+
+.wrapperFormConfirm {
+  width: 250px;
+  & .wrapperConfirmAbstract {
+    & .wrapperAnswerYes {
+      display: block;
+      float: left;
+      margin-right: 75px;
+      margin-left: 10px;
+      border: 1px solid #fff;
+      padding: 5px;
+      border-radius: 3px;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid var(--default-border);
+      }
+      & .answerYes {
+        width: 50px;
+        height: 50px;
+        background: transparent var(--icon-bg) no-repeat scroll -1px -291px / auto 550px;
+      }
+    }
+    & .wrapperAnswerNo {
+      display: block;
+      float: left;
+      border: 1px solid #fff;
+      padding: 5px;
+      border-radius: 3px;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid var(--default-border);
+      }
+      & .answerNo {
+        width: 50px;
+        height: 50px;
+        background: transparent var(--icon-bg) no-repeat scroll -50px -291px / auto 550px;
+      }
+    }
+  }
+}

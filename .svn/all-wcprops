@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/sys_laargo/!svn/ver/114/trunk
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sys_laargo/!svn/ver/115/trunk/LICENSE.txt
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sys_laargo/!svn/ver/181/trunk/package.json
+END
+database.sqlite
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sys_laargo/!svn/ver/115/trunk/database.sqlite
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sys_laargo/!svn/ver/115/trunk/.gitignore
+END
+.travis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sys_laargo/!svn/ver/115/trunk/.travis.yml
+END
+CHANGELOG.md
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sys_laargo/!svn/ver/115/trunk/CHANGELOG.md
+END
+CONTRIBUTING.md
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sys_laargo/!svn/ver/115/trunk/CONTRIBUTING.md
+END
+.gitattributes
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sys_laargo/!svn/ver/115/trunk/.gitattributes
+END
+.editorconfig
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sys_laargo/!svn/ver/115/trunk/.editorconfig
+END
+.flowconfig
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sys_laargo/!svn/ver/115/trunk/.flowconfig
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sys_laargo/!svn/ver/115/trunk/README.md
+END

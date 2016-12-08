@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sys_laargo/!svn/ver/115/trunk/src/store/logger
+END
+logger.server.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sys_laargo/!svn/ver/115/trunk/src/store/logger/logger.server.js
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sys_laargo/!svn/ver/115/trunk/src/store/logger/package.json
+END
+logger.client.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sys_laargo/!svn/ver/115/trunk/src/store/logger/logger.client.js
+END

@@ -1,0 +1,114 @@
+@import '../../../components/variables.css';
+
+:root {
+  --dragBoxColorLine: #ffffff;
+  --dragBoxWidthHeight: 1px;
+}
+
+.loader {
+  height: 6px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.loader:before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 6px;
+  background-color: #dedede;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    left: -200px;
+    width: 30%;
+  }
+  50% {
+    width: 30%;
+  }
+  70% {
+    width: 70%;
+  }
+  80% {
+    left: 50%;
+  }
+  95% {
+    left: 120%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0 40px;
+  max-width: var(--max-content-width);
+}
+
+.dropZone {
+
+}
+
+#contentDragItems {
+  & .parent {
+    border: 1px solid var(--default-border);
+    padding: 10px;
+    width: var(--max-content-width);
+    height: 500px;
+    & .dragItem {
+      display: inline-block;
+      cursor: move;
+      z-index: 2;
+    }
+    & .frameMove {
+      width: 200px;
+      height: 100px;
+      top: 20px;
+      left: 100px;
+      border: 1px solid #f1f1f1;
+      position: relative;
+      & .leftLine {
+        position: absolute;
+        width: var(--dragBoxWidthHeight);
+        height: 100%;
+        left: 0;
+        border-left: 1px solid var(--dragBoxColorLine);
+      }
+      & .topLine {
+        position: absolute;
+        height: var(--dragBoxWidthHeight);
+        width: 100%;
+        top: 0;
+        border-top: 1px solid var(--dragBoxColorLine);
+      }
+      & .rightLine {
+        position: absolute;
+        width: var(--dragBoxWidthHeight);
+        height: 100%;
+        border-right: 1px solid var(--dragBoxColorLine);
+        right: 0;
+      }
+      & .bottomLine {
+        position: absolute;
+        width: 100%;
+        height: var(--dragBoxWidthHeight);
+        bottom: 0;
+        border-bottom: 1px solid var(--dragBoxColorLine);
+      }
+    }
+  }
+}

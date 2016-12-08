@@ -1,0 +1,66 @@
+
+import React from 'react';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import Link from './../Link';
+import s from './LeftMenu.css';
+import { moduleUrl } from '../../config';
+import * as views from '../viewConstants';
+import fetch from '../../core/fetch';
+
+class LeftMenu extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { storePath: '' }
+  }
+
+  componentDidMount() {
+    const url = "/fetch-session";
+    return fetch(url, { credentials: 'include' })
+      .then(response => response.json())
+      .then(result => {
+        this.setState({ storePath: decodeURIComponent(result.storePath) });
+      })
+  }
+
+  render() {
+    const ulID = "left-menu";
+    return (
+      <div className={s.root}>
+        <div className={s.header}>
+          <span className={s.title}/>
+        </div>
+        <div className={s.body}>
+          {(() => {
+            switch (this.props.type) {
+              case views.VIEW_STORE:
+              case views.VIEW_CHANGE_PASSWORD:
+                return (
+                  <ul id={ulID}>
+                    <li id={views.VIEW_STORE}><Link to="/cai-dat">Cửa hàng</Link></li>
+                    <li id={views.VIEW_CHANGE_PASSWORD}><Link to="/doi-mat-khau">Đổi mật khẩu</Link></li>
+                  </ul>
+                );
+              default:
+                return (
+                  <ul id={ulID}>
+                    <li id={views.VIEW_DEFAULT}><Link to="/">Tổng quan</Link></li>
+                    <li id={views.VIEW_CATEGORY}><Link to="/danh-muc">Danh mục</Link></li>
+                    <li id={views.VIEW_PRODUCT}><Link to="/san-pham">Sản phẩm</Link></li>
+                  </ul>
+                );
+            }
+          })()}
+          <div className={s.toStore}>
+            <a target='_blank'
+               href={process.env.NODE_ENV == 'development' ? `${moduleUrl.pathLaargoLocal}${this.state.storePath}` :
+                 `${moduleUrl.pathLaargoPublish}${this.state.storePath}`}>Tới
+              cửa hàng</a>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default withStyles(s)(LeftMenu);

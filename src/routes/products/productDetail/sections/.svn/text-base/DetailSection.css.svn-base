@@ -1,0 +1,150 @@
+@import '../../../../components/variables.css';
+@import '../../../../components/ComponentUI/panel.css';
+@import '../../../../components/ComponentUI/button.css';
+@import '../../../../components/ComponentUI/input.css';
+@import '../../../../components/ComponentUI/table.css';
+@import './variables.css';
+
+.wrapperProductInfo {
+  & .leftSide {
+    width: var(--productInfoLeftSide);
+    float: left;
+  }
+  & .rightSide {
+    float: left;
+    width: var(--productInfoRightSide);
+    display: block;
+    & .wrapperImageSelect {
+      width: var(--productInfoImageSelectWidth);
+      float: right;
+      & .contentImage {
+        width: var(--productInfoImageSelectWidth);
+        height: auto;
+        border-bottom:1px solid var(--default-border);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        & .defaultImage {
+          width: 64px;
+          height: 66px;
+          display: block;
+          background: transparent var(--icon-bg) no-repeat scroll -63px -151px / auto 409px;
+          margin: 40px auto;
+        }
+        & img {
+          display: block;
+          max-width: 100%;
+          height: 300px;
+          margin: 0 auto;
+        }
+      }
+      & .wrapperListImage {
+        & ul {
+          list-style-type: none;
+          padding-left: 0;
+          & li {
+            display: block;
+            & a {
+              display: inline-block;
+              float: left;
+              border: 2px solid var(--productInfoBorderListImageItem);
+              border-radius: 3px;
+              -moz-border-radius: 3px;
+              -webkit-border-radius: 3px;
+              margin-bottom: 5px;
+              padding: 3px;
+              margin-right: 20px;
+              &:hover {
+
+              }
+              &.active {
+                border-color: var(--dark-red);
+              }
+              & img {
+                height: 50px;
+              }
+              &[data-add-action="true"] {
+                background: transparent var(--icon-bg) no-repeat scroll 0px -89px / auto 409px;
+                border: 0;
+                width: 27px;
+                height: 27px;
+                margin-left: 5px;
+                margin-top: 10px;
+                &:hover {
+                  background: transparent var(--icon-bg) no-repeat scroll -27px -89px / auto 409px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    & .wrapperRightInfoProduct {
+      float: left;
+      width: var(--productInfoProductInfoWidth);
+      & .inside {
+        margin-left: 0;
+        & .productName {
+          & h2 {
+            font-size: 17px;
+            color: var(--gray-dark);
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 5px;
+          }
+        }
+        & .wrapperProductPrice {
+          margin-top: 10px;
+          & .productPrice {
+            & .priceProduct {
+              font-weight: normal;
+              color: var(--productInfoPriceUnitColor);
+              font-size: 16px;
+              float: left;
+            }
+            & .priceUnit {
+              color: var(--productInfoPriceUnitColor);
+              margin-left: 7px;
+              margin-top: 3px;
+              display: inline-block;
+            }
+          }
+        }
+
+        & label.labelProductPrice {
+          margin-top: 3px;
+        }
+        & .productHighLightInfo {
+          & ul {
+            padding: 0;
+            margin-left: 17px;
+            list-style-type: disc;
+            & li {
+              & a {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapperAttributesProducts {
+  & label.categoryLabel {
+    border-bottom: 1px solid var(--default-border);
+    padding-bottom: 1px;
+  }
+  & label.categoryValue {
+
+  }
+}
+
+.lineSpare {
+  height: 2px;
+  width: 98%;
+  border-bottom: 1px solid var(--default-border);
+  display: block;
+  clear: both;
+}

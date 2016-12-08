@@ -1,0 +1,30 @@
+@import '../../../components/variables.css';
+@import '../../../components/ComponentUI/panel.css';
+@import '../../../components/ComponentUI/button.css';
+@import '../../../components/ComponentUI/input.css';
+@import '../../../components/ComponentUI/table.css';
+
+#productTable {
+  & .wrapperProductName {
+    max-width: 290px;
+    & .wrapImage {
+      float: left;
+      & .image {
+        width: 30px;
+      }
+    }
+    & .wrapName {
+      float: left;
+      margin-left: 10px;
+      width: 250px;
+    }
+  }
+  & .wrapperProductPrice {
+    & label {
+      color: var(--gray-light);
+    }
+    & .unitPrice {
+      margin-left: 2px;
+    }
+  }
+}

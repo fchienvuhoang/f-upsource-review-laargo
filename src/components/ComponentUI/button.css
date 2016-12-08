@@ -1,0 +1,202 @@
+@import '../../components/variables.css';
+@import './drop-box.css';
+
+:root {
+  --btn-color: #4e5665;
+  --color-btn-disable: #707887;
+}
+
+.dropDown {
+  position: relative;
+}
+
+.paddingShortText {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.btnDisable {
+  opacity: 0.6;
+}
+
+.commonBtn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0 8px;
+  color: var(--btn-color);
+  background: #fff;
+  box-sizing: content-box;
+  line-height: 22px;
+  position: relative;
+  & span.editIcon {
+    display: block;
+    width: 18px;
+    height: 16px;
+    background: transparent var(--icon-bg) no-repeat scroll -37px -59px / auto 269px;
+    margin-left: -20px;
+    margin-top: 4px;
+    position: absolute;
+  }
+  & span.addIcon {
+    display: block;
+    width: 13px;
+    height: 14px;
+    background: transparent var(--icon-bg) no-repeat scroll -82px 4px / auto 314px;
+    margin-left: -20px;
+    margin-top: 4px;
+    position: absolute;
+  }
+  &.withIcon {
+    padding-left: 25px !important;
+  }
+  & .wrapperLoading {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+  }
+}
+
+.commonDefault {
+  //background: -webkit-linear-gradient(to bottom, #fdfeff, #e4e5e6); /* For Safari 5.1 to 6.0 */
+  //background: -o-linear-gradient(to bottom, #fdfeff, #e4e5e6); /* For Opera 11.1 to 12.0 */
+  //background: -moz-linear-gradient(to bottom, #fdfeff, #e4e5e6); /* For Firefox 3.6 to 15 */
+  //background: linear-gradient(to bottom, #fdfeff, #e4e5e6); /* Standard syntax */
+  border:1px solid #cdd3d9;
+}
+
+.commonBlue {
+  color: #fff;
+  background: -webkit-linear-gradient(to bottom, #007ee5, #1c6ac7); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to bottom, #007ee5, #1c6ac7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to bottom, #007ee5, #1c6ac7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #007ee5, #1c6ac7); /* Standard syntax */
+  border: 1px solid #0663C4;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.commonGreen {
+  color: #fff;
+  background: -webkit-linear-gradient(to bottom, #67cc2d, #48aa13); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to bottom, #67cc2d, #48aa13); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to bottom, #67cc2d, #48aa13); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #67cc2d, #48aa13); /* Standard syntax */
+  border-color: #60a62e #519f18 #409701;
+  border-style: solid;
+  border-width: 1px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn:before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.btnLoading {
+  &[data-is-loading="true"] {
+    padding-left: 27px;
+    & .wrapperLoading {
+      display: block;
+    }
+  }
+  &[data-is-loading="false"] {
+    & .wrapperLoading {
+      display: none;
+    }
+  }
+}
+
+.margin {
+  margin-left: 8px;
+}
+
+.btnDefault {
+  line-height: 24px;
+  /*common btn*/
+  @extend .commonBtn;
+  /*common default*/
+  @extend .commonDefault;
+}
+
+.btnDefault:active {
+  background: #EAEBEC;
+}
+
+.btnDefaultLarge {
+  line-height: 26px;
+  /*common btn*/
+  @extend .commonBtn;
+  /*common default*/
+  @extend .commonDefault;
+}
+
+.btnDefaultLarge:active {
+  background: #EAEBEC;
+}
+
+.btnDefaultLarge[disabled=disabled] {
+  color: var(--color-btn-disable);
+}
+
+.btnDefaultLarge:disabled {
+  color: var(--color-btn-disable);
+}
+
+.btnBlue {
+  line-height: 22px;
+  /*common btn*/
+  @extend .commonBtn;
+  /*common blue*/
+  @extend .commonBlue;
+}
+
+.btnBlueLarge {
+  line-height: 26px;
+  /*common btn*/
+  @extend .commonBtn;
+  /*common blue*/
+  @extend .commonBlue;
+}
+
+.btnBlue:active {
+  background: #0071ce;
+}
+
+.btnBlueLarge:active {
+  background: #0071ce;
+}
+
+.btnGreen {
+  line-height: 22px;
+  /*common btn*/
+  @extend .commonBtn;
+  @extend .commonGreen;
+}
+
+.btnGreen:active {
+  background: #48aa13;
+}
+
+.btnGreenLarge {
+  line-height: 26px;
+  @extend .commonBtn;
+  @extend .commonGreen;
+}
+
+.btnGreenLarge:active {
+  background: #48aa13;
+}
+
+.dropBoxWrapper {
+  display: block;
+}

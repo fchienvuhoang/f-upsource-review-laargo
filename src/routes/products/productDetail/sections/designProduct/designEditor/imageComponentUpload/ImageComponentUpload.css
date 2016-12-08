@@ -1,0 +1,14 @@
+@import '../../../../../../../components/variables.css';
+@import '../../../../../../../components/ComponentUI/panel.css';
+@import '../../../../../../../components/ComponentUI/button.css';
+
+.root {
+  & .wrapperMain {
+    width: 500px;
+  }
+  & .dropUpload {
+    border: 0;
+    width: 100px;
+    margin: 0 auto;
+  }
+}

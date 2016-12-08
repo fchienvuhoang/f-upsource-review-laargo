@@ -1,0 +1,74 @@
+@import '../../../components/variables.css';
+@import '../../../components/ComponentUI/drop-box.css';
+
+.wrapEditorControls {
+  & .insideEditorControls {
+    margin-left: 10px;
+    & .leftOption {
+      float: left;
+      width: 10px;
+    }
+    & .rightOption {
+      float: right;
+      width: 35px;
+      & ul.optionColumn {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        & li {
+          display: block;
+          position: relative;
+          & .wrapItem {
+            & .option {
+              display: block;
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+              -moz-border-radius: 50%;
+              -webkit-border-radius: 50%;
+              border: 1px solid #999;
+              cursor: pointer;
+              margin-right: 10px;
+              &:hover {
+                background: #f1f1f1;
+              }
+              & .wrapDots {
+                width: 4px;
+                margin: 5px auto;
+                pointer-events: none;
+                & .dot {
+                  pointer-events: none;
+                  display: block;
+                  width: 4px;
+                  height: 4px;
+                  border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  background: #999;
+                  margin-bottom: 2px;
+                }
+              }
+            }
+            & .wrapDropBox {
+              margin-right: 5px;
+              height: 0;
+              &[data-show="false"] {
+                display: none;
+              }
+              & .dropBox {
+                right: 5px;
+                width: 120px;
+              }
+              & ul li a {
+                font-size: 12px;
+              }
+            }
+          }
+          &.lineSpare {
+            border-bottom: 1px solid var(--default-border);
+            height: 5px;
+          }
+        }
+      }
+    }
+  }
+}

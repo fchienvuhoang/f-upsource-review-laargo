@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sys_laargo/!svn/ver/129/trunk/src/core/fetch
+END
+fetch.client.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sys_laargo/!svn/ver/115/trunk/src/core/fetch/fetch.client.js
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sys_laargo/!svn/ver/115/trunk/src/core/fetch/package.json
+END
+fetch.server.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sys_laargo/!svn/ver/129/trunk/src/core/fetch/fetch.server.js
+END

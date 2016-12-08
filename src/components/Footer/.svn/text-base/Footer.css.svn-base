@@ -1,0 +1,49 @@
+@import '../variables.css';
+
+:root {
+  --footerLeftSide: 300px;
+  --footerRightSide: calc(var(--max-content-width) - var(--footerLeftSide));
+}
+
+.root {
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--footer-bg);
+  clear: both;
+  margin-top: 80px;
+  & .container {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-top: 1px solid var(--default-border);
+    background-color: var(--footer-bg);
+    max-width: var(--max-content-width);
+    width: var(--max-content-width);
+    text-align: center;
+    & .leftSide {
+      width: var(--footerLeftSide);
+      display: block;
+      float: left;
+      & .wrapperListItems {
+        & ul {
+          text-align: left;
+          & li {
+            display: block;
+            & a {
+              display: block;
+              color: #767676;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    & .rightSide {
+      width: var(--footerRightSide);
+      display: block;
+      float: left;
+    }
+  }
+}

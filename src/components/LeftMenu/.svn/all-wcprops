@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sys_laargo/!svn/ver/131/trunk/src/components/LeftMenu
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sys_laargo/!svn/ver/115/trunk/src/components/LeftMenu/package.json
+END
+LeftMenu.css
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sys_laargo/!svn/ver/184/trunk/src/components/LeftMenu/LeftMenu.css
+END
+LeftMenu.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sys_laargo/!svn/ver/185/trunk/src/components/LeftMenu/LeftMenu.js
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/models
+END
+UserClaim.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/models/UserClaim.js
+END
+.eslintrc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/models/.eslintrc
+END
+UserLogin.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/models/UserLogin.js
+END
+index.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/models/index.js
+END
+User.js
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/models/User.js
+END
+UserProfile.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sys_laargo/!svn/ver/115/trunk/src/data/models/UserProfile.js
+END

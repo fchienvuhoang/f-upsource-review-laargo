@@ -1,0 +1,68 @@
+@import '../../../../../../components/variables.css';
+@import '../../../../../../components/ComponentUI/panel.css';
+@import '../../../../../../components/ComponentUI/input.css';
+@import '../../../../../../components/ComponentUI/button.css';
+
+:root {
+  --dropzoneHeight: 100px;
+}
+
+.wrapperMain {
+  width: 710px;
+  & .wrapperBtnUpload {
+    & .wrapperButton {
+      & .wrapperForDropZone {
+        width: 100%;
+        height: var(--dropzoneHeight);
+        border: 2px dashed var(--default-border);
+        position: relative;
+        margin: 0 auto;
+        & a {
+          display: table;
+          margin: calc((var(--dropzoneHeight) / 2) - 15) auto;
+        }
+      }
+      & .wrapperDropZoneActive {
+        background: #f1f1f1;
+      }
+    }
+    & .wrapperDecryption {
+      text-align: center;
+      margin-top: 10px;
+      & span {
+        color: var(--gray-light);
+      }
+    }
+  }
+  & .wrapperPreviewImageUploaded {
+    border-top: 1px solid var(--default-border);
+    margin-top: 10px;
+    padding-top: 15px;
+    & .wrapperTitle {
+      & label {
+        color: var(--gray-light);
+        font-weight: bold;
+      }
+    }
+    & .wrapperListImageAfterResize {
+      margin-top: 10px;
+      & .item {
+        width: 150px;
+        min-height: 200px;
+        border: 1px solid var(--default-border);
+        float: left;
+        margin-right: 15px;
+        & img {
+          max-width: 100%;
+        }
+        & .wraperImageInside {
+          margin: 5px;
+          &[data-size="xsmall"] {
+            width: 50px;
+            margin: 55px auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../../components/variables.css';
+
+.imageRoot {
+  & .wrapInside {
+    border: 1px dashed var(--default-border);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 5px;
+    & .wrapItemClick {
+      cursor: pointer;
+      & .defaultImage {
+        width: 45px;
+        height: 40px;
+        display: block;
+        background: transparent var(--icon-bg) no-repeat scroll -45px -22px / auto 290px;
+        margin: 0 auto;
+      }
+      & .imageBox {
+        max-width: 100%;
+        display: block;
+        & img {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

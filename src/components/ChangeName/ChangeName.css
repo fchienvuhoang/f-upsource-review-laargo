@@ -1,0 +1,8 @@
+@import '../../components/variables.css';
+@import '../../components/ComponentUI/panel.css';
+@import '../../components/ComponentUI/input.css';
+@import '../../components/ComponentUI/button.css';
+
+.wrapperChangeCategory {
+  width: 450px;
+}

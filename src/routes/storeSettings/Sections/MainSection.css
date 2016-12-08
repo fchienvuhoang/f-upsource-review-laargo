@@ -1,0 +1,115 @@
+@import '../../../components/variables.css';
+@import '../../../components/ComponentUI/panel.css';
+@import '../../../components/ComponentUI/button.css';
+@import '../../../components/ComponentUI/input.css';
+
+.wrapperSettings {
+  min-height: 450px;
+  & .leftSite {
+    display: inline-block;
+    width: 270px;
+    vertical-align: top;
+    border-right: 1px solid var(--default-border);
+    margin-right: 60px;
+    & .wrapperThumbStore {
+      border: 1px solid var(--default-border);
+      width: 170px;
+      height: 170px;
+      position: relative;
+      & img {
+        width: 160px;
+        height: 160px;
+        margin: 5px;
+      }
+      &:hover {
+        & .changeImageLink {
+          display: block;
+        }
+      }
+      & .changeImageLink {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: none;
+        & a {
+          color: #fff;
+          background: #000;
+          opacity: 0.80;
+          display: block;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          text-align: center;
+        }
+        &:hover {
+          & a {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+    & .wrapperName {
+      display: block;
+      width: 170px;
+      margin-top: 10px;
+      position: relative;
+      & label {
+        font-size: 16px;
+      }
+      & .wrapperEdit {
+        display: block;
+        & span.editIcon {
+          background: transparent var(--icon-bg) no-repeat scroll -58px -67px / auto 298px;
+          display: block;
+          width: 21px;
+          height: 20px;
+          position: absolute;
+          right: -30px;
+          top: 0;
+          cursor: pointer;
+        }
+      }
+    }
+    & .wrapperNameEdit {
+      position: absolute;
+      width: 500px;
+      padding: 10px;
+      background: #F4FAFF;
+      margin-top: 20px;
+      border-radius: 3px;
+      &[data-show="false"] {
+        display: none;
+      }
+      & input {
+        width: 400px;
+        display: inline-block;
+      }
+      & .wrapButton {
+        width: 60px;
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+  }
+  & .rightSite {
+    display: inline-block;
+    vertical-align: top;
+    & .wrapperStoreName {
+      margin: 10px auto;
+      & span {
+        font-weight: bold;
+      }
+      & span.originDomain {
+        margin-right: 1px;
+        & a {
+          color: var(--gray-dark);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      & span.storeName {
+        color: var(--green);
+      }
+    }
+  }
+}

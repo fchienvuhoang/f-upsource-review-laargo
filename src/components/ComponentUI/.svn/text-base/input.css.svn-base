@@ -1,0 +1,196 @@
+@import '../../components/variables.css';
+
+:root {
+  --place-color: #9197a3;
+  --place-color-hover: #bdc1c9;
+  --border-input-error: #dc2606;
+  --color-message-error: #dc2606;
+  --border: #d3d6db;
+  --box-shadown-color: #d1d0d1;
+  --label-color: #555;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  clear: both;
+  &.notPaddingBottom {
+    margin-bottom: 0;
+  }
+  & label {
+    font-weight: normal;
+    color: var(--label-color);
+    display: block;
+    margin-bottom: 10px;
+  }
+  &.hasError {
+    & .errorMessage {
+      color: var(--color-message-error);
+      margin-top: 5px;
+    }
+    & input {
+      border: 1px solid var(--border-input-error);
+    }
+    & textarea {
+      border: 1px solid var(--border-input-error);
+    }
+  }
+}
+
+.formGroup .errorMessage[data-show="false"] {
+  display: none;
+}
+
+.formGroup input[type="text"], input[type="password"] {
+  display: block;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  width: 100%;
+}
+
+.formGroupInline {
+  & .colLabel {
+    float: left;
+    & label {
+      margin-top: 7px;
+      color: var(--label-color);
+      //margin-bottom: 0;
+      &:after {
+        content: ':';
+        color: var(--gray-light1);
+      }
+    }
+  }
+  & .colValue {
+    float: left;
+    margin-left: 8px;
+    & label.value {
+      margin-top: 7px;
+      //margin-bottom: 0;
+      color: var(--gray-dark);
+    }
+  }
+}
+
+.formGroupTable {
+  & table {
+    & tr {
+      & td {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      & td.label {
+        text-align: right;
+        & label {
+          color: var(--gray-light1);
+        }
+        &:after {
+          content: ":";
+          color: var(--gray-light1);
+          margin-left: 0;
+        }
+      }
+      & td.value {
+        text-align: left;
+        & label {
+          margin-left: 10px;
+        }
+        & .wrapSelect {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.input[type="text"], input[type="password"] {
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 6px 10px;
+  color: #141823;
+  width: 100%;
+  line-height: 16px;
+  vertical-align: middle;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid var(--border);
+  box-shadow: 0 0 2px -1px var(--box-shadown-color) inset;
+  -moz-box-shadow: 0 0 2px -1px var(--box-shadown-color) inset;
+  -webkit-box-shadow: 0 0 2px -1px var(--box-shadown-color) inset;
+}
+
+.input[type="text"]:focus::-moz-placeholder {
+  color: var(--place-color-hover);
+}
+
+.input[type="text"]:focus:-ms-input-placeholder {
+  color: var(--place-color-hover);
+}
+
+.input[type="text"]:focus::-webkit-input-placeholder {
+  color: var(--place-color-hover);
+}
+
+.input[type="text"].bgEdit {
+  background: #f5f5f5;
+}
+
+.input[type="text"].bgEdit:focus {
+  background: #fff;
+}
+
+.input[type="text"]::-moz-placeholder {
+  color: var(--place-color);
+}
+
+.input[type="text"]:-ms-input-placeholder {
+  color: var(--place-color);
+}
+
+.input[type="text"]::-webkit-input-placeholder {
+  color: var(--place-color);
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+textarea.input {
+  border: 1px solid var(--border);
+  box-shadow: 0 0 2px -1px var(--box-shadown-color) inset;
+  -moz-box-shadow: 0 0 2px -1px var(--box-shadown-color) inset;
+  -webkit-box-shadow: 0 0 2px -1px var(--box-shadown-color) inset;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  padding: 6px 10px;
+}
+
+input[type=checkbox] + label {
+  cursor: pointer;
+  border: 0.5px solid #9e9d9e;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  display: inline-block;
+  height: 12px;
+  padding: 0;
+  vertical-align: middle;
+  width: 12px;
+}
+
+input[type=checkbox]:checked + label {
+  background: #F8F9FA var(--icon-bg) no-repeat scroll -99px 1px / auto 328px;
+}
+
+.fullWith {
+  width: 100%;
+}
+
+.halfWith {
+  width: 50%;
+}

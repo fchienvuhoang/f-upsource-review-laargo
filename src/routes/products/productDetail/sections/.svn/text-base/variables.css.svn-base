@@ -1,0 +1,13 @@
+
+:root {
+  --productInfoLeftSide: 55px;
+  --productInfoRightSide: calc(var(--right-width) - var(--productInfoLeftSide) - 45px);
+  --productInfoBorderListImageItem: #dedede;
+  --productInfoBorderListImageItemActive: #bfbebf;
+  --mainBorderImageChoice : #dedede;
+  --productInfoImgThumbWidth: 46px;
+  --productInfoImgThumbHeight: 50px;
+  --productInfoPriceUnitColor: #000;
+  --productInfoImageSelectWidth: 300px;
+  --productInfoProductInfoWidth: calc(var(--productInfoRightSide) - var(--productInfoImageSelectWidth));
+}

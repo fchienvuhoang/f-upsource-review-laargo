@@ -1,0 +1,30 @@
+@import '../../../../../components/variables.css';
+@import '../../../../../components/ComponentUI/panel.css';
+@import '../../../../../components/ComponentUI/input.css';
+@import '../../../../../components/ComponentUI/button.css';
+
+.rootFormAttributesProduct {
+  width: 600px;
+  & .emptyData {
+    color: var(--gray-light);
+  }
+  & .wrapperChoiceCategory {
+    border-bottom: 1px solid var(--default-border);
+    padding-bottom: 10px;
+  }
+  & .wrapperListAttributes {
+    & label.titleList {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      display: block;
+      color: var(--gray);
+      font-weight: bold;
+    }
+    & .wrapperItems {
+      padding-left: 120px;
+      &[data-show="false"] {
+        display: none;
+      }
+    }
+  }
+}

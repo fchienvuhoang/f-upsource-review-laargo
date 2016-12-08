@@ -1,0 +1,194 @@
+@import '../../../../../components/variables.css';
+@import '../../../../../components/ComponentUI/panel.css';
+@import '../../../../../components/ComponentUI/input.css';
+@import '../../../../../components/ComponentUI/button.css';
+@import "../variables.css";
+
+.dropZone {
+
+}
+
+.wrapFormProductInfo {
+  width: 900px;
+  & .rightInfoProduct {
+    float: left;
+    & .wrapperImageChoice {
+      width: 400px;
+      float: right;
+      & .wrapImage {
+        text-align: center;
+        border-bottom: 1px solid var(--default-border);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        & .defaultImage {
+          width: 64px;
+          height: 66px;
+          display: block;
+          background: transparent var(--icon-bg) no-repeat scroll -63px -151px / auto 409px;;
+          margin: 40px auto;
+        }
+        & img {
+          max-width: 100%;
+          height: 300px;
+        }
+      }
+      & .wrapperImageList {
+        & .imageItems {
+          & .item {
+            margin-bottom: 5px;
+            float: left;
+            & .wrapperImage {
+              & a {
+                border: 2px solid var(--productInfoBorderListImageItem);
+                border-radius: 3px;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                display: block;
+                //width: calc(var(--productInfoImgThumbWidth) - 4px);
+                margin-left: 10px;
+                padding: 3px;
+                margin-right: 8px;
+              }
+              & a.active {
+                border-color: var(--dark-red);
+              }
+              & span.closeIcon {
+                background: transparent var(--icon-bg) no-repeat scroll -47px 3px / auto 350px;
+                display: block;
+                height: 17px;
+                width: 14px;
+                cursor: pointer;
+                margin: 3px auto;
+                &:hover {
+                  background-position: -61px 3px;
+                }
+              }
+              & img {
+                height: 50px;
+                &:hover {
+                  border-color: var(--productInfoBorderListImageItemActive);
+                }
+              }
+            }
+            & .iconAddNew {
+              background: transparent var(--icon-bg) no-repeat scroll 0px -89px / auto 409px;
+              border: 0;
+              width: 27px;
+              height: 27px;
+              margin-left: 15px;
+              margin-top: 15px;
+              display: block;
+              &:hover {
+                background-position: -29px -89px;
+              }
+              &:active {
+                background-position: -0px -118px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .wrapperInfoRight {
+      display: block;
+      width: 460px;
+      float: left;
+      & .wrapInside {
+        margin-left: 10px;
+        margin-right: 20px;
+        & .formPrice {
+          & input {
+            width: 150px;
+            float: left;
+            color: var(--productInfoPriceUnitColor);
+            font-weight: bold;
+          }
+          & span.priceUnit {
+            float: left;
+            margin-top: 11px;
+            margin-left: 7px;
+            font-weight: bold;
+            color: var(--gray-light);
+          }
+          & .wrapperInline {
+            display: inline-block;
+          }
+        }
+        & .wrapperListHighLightInfo {
+          border: 1px solid var(--default-border);
+          clear: both;
+          display: block;
+          margin-top: 20px;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          & .wrapperHeader {
+            border-bottom: 1px solid var(--default-border);
+            background: #e8e8e8;
+            & label.decryptionFeature {
+              font-weight: normal;
+              padding-top: 6px;
+              padding-bottom: 6px;
+              margin-left: 5px;
+              margin-bottom: 0;
+              color: var(--gray-dark);
+            }
+          }
+          & .wrapperAction {
+            margin-top: 10px;
+            & .formInputInfo {
+              margin-bottom: 6px;
+              & .wrapperTextInfo {
+                padding-left: 10px;
+                & textarea.inputInfo {
+                  width: 97%;
+                  max-width: 100%;
+                  background: #FAFAFA;
+                }
+              }
+              & .wrapperBtnForm {
+                padding-top: 6px;
+                padding-right: 12px;
+                & a {
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+        & .wrapperListItemsHighLight {
+          & ul {
+            margin-left: 10px;
+            & li {
+              & span {
+                background: transparent var(--icon-bg) no-repeat scroll -47px 3px / auto 350px;
+                display: block;
+                float: right;
+                height: 17px;
+                position: absolute;
+                margin-left: -10px;
+                width: 14px;
+                cursor: pointer;
+                margin-top: 4px;
+                &:hover {
+                  background-position: -61px 3px;
+                }
+              }
+              & a {
+                display: inline-block;
+                color: var(--gray);
+                margin-top: 4px;
+                margin-bottom: 2px;
+                padding: 2px 0 3px;
+                border-radius: 2px;
+                font-weight: normal;
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
